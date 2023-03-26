@@ -3,6 +3,7 @@
 // https://github.com/ConnersHua/Profiles/blob/master/Quantumult/Task/AutoCheckin.conf
 
 const wifi = $network.wifi.ssid;
+$notification.post('wifi', '副标题', wifi);
 
 if (wifi === "MyHomeWifi") {
   const checkinUrl = "https://example.com/checkin";
